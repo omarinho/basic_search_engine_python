@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Home</title>
+</head>
+<body>
+	<h1>NES, SNES, N64 Search - Web App</h1>
+	<h3>This is a RESTFUL app to search for videos games</h3>
+	<hr/>
+  <br clear="all"/><br/>
+	<h2>HTML VERSION</h2>
+	<a href="/search">Click here for a web search</a>
+	<hr/>
+  <br clear="all"/><br/>
+	<h2>API (JSON) VERSION</h2>
+		<h3>Available methods:</h3>
+		<blockquote>
+			<span style="color:red;">1. /search/?format=json</span>
+			<br/>
+			<b>Parameters (POST request):</b><br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;query: The keyword you are looking for
+			<br/><br/>
+			<span style="color:red;">2. /game/GAME_ID/?format=json</span>
+			<br/>	
+                        <b>Parameters (GET request):</b><br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GAME_ID: The ID of the game. You can know this from the search results.
+			<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example: <a href="http://54.68.197.149:8080/game/544/?format=json">http://54.68.197.149:8080/game/544/?format=json</a>
+		</blockquote>
+</body>
+</html>

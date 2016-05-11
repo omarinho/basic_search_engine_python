@@ -1,0 +1,24 @@
+$def with (rows,aQuery)
+<html>
+<head>
+	<title>Search</title>
+</head>
+<body>
+	&lt;&lt; <a href="/">Back</a>
+	<br clear="all"/>
+	<form method="POST">
+	<h2>Enter a keyword: <input type="text" name="query" value="$:aQuery"></h2>
+	</form>
+	<hr/>
+	$if aQuery != '':
+		<h2>Search results for $:aQuery</h2>
+		<ul>
+		$ count = 0
+ 		$for game in rows:
+        		<li><a href="/game/$:game[0]/">$:game[1]</a></li><br/>
+			$ count=count + 1  
+		$if count == 0:
+        		<i>No results found</i>
+		</ul>
+</body>
+</html>

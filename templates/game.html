@@ -1,0 +1,25 @@
+$def with (game)
+<html>
+<head>
+  <title>Game</title>
+  <base href="http://www.giantbomb.com/" target="_blank">
+</head>
+<body>
+        &lt;&lt; <a href="javascript:void(0);" onClick="window.history.back();">Back</a>
+        <br clear="all"/><br/>
+        <h1>Name: $:game[0]</h1>
+	<h3>$:game[5]</h3>
+	<img src="$:game[13]">
+	<hr/>
+        <ul>
+                <li><b>Original Release Date:</b> $:game[21]</li>
+                <li><b>Site detail URL:</b> <a href="$:game[23]" target="_blank">$:game[23]</a></li>                              
+        </ul>
+	<hr/>
+	<h3>Description:</h3>
+	$:game[6]
+	<hr/>
+</body>
+</html>
+
+
